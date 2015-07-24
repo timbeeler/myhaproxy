@@ -20,7 +20,7 @@
 
 # dynamic version
 #knife search for nodes "role:web"
-all_web_nodes = search("node","role:web") # node_oject 
+all_web_nodes = search("node","role:web AND chef_environment:#{node.chef_environment}") # node_oject 
 
 members =[]
 
